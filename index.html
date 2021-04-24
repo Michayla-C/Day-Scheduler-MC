@@ -8,122 +8,51 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
+    
+    <!--Style.css-->
     <link rel="stylesheet" href="style.css" />
-    <title>Work Day Scheduler</title>
+    <title>Day Scheduler</title>
   </head>
 
   <body>
-    <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
+    <div class="jumbotron">
+      <h1 class="display-3">Day Scheduler</h1>
+      <p class="lead">A simple calendar to schedule your work</p>
       <p id="currentDay" class="lead"></p>
-    </header>
-    <div class="calendarContainer" id="daySchedule">
-      <!-- Timeblocks go here -->
-      <h2 class="date"></h2>
-      <div class="calendar">
-        
-        <div class="empty"></div>
-        
-        <div class="days">
-          <div class="col col-1">Monday</div>
-          <div class="col col-2">Tuesday</div>
-          <div class="col col-3">Wednesday</div>
-          <div class="col col-4">Thursday</div>
-          <div class="col col-5">Friday</div>
-          <div class="col col-6">Saturday</div>
-          <div class="col col-7">Sunday</div>
-        </div>
+    </div> 
 
-        <div class="times">
-          <div class="row row-1">8 AM</div>
-          <div class="row row-2">9 AM</div>
-          <div class="row row-3">10 AM</div>
-          <div class="row row-4">11 AM</div>
-          <div class="row row-5">12 PM</div>
-          <div class="row row-6">1 PM</div>
-          <div class="row row-7">2 PM</div>
-          <div class="row row-8">3 PM</div>
-          <div class="row row-9">4 PM</div>
-          <div class="row row-10">5 PM</div>
-        </div>
+    <!--Table-->     
+      <table class="table table-bordered" style="width:100%">
+                
+        <!--Tasks(Top)-->
+        <tr class="tasks">
+          <th class="col col-1"></th>
+          <th class="col col-2">Task 1</th>
+          <th class="col col-3">Task 2</th>
+          <th class="col col-4">Task 3</th>
+          <th class="col col-5">Task 4</th>
+          <th class="col col-6">Task 5</th>
+        </tr>
 
-        <div class="content">
-          <div id="1"></div>
-          <div id="2"></div>
-          <div id="3"></div>
-          <div id="4"></div>
-          <div id="5"></div>
-          <div id="6"></div>
-          <div id="7"></div>
-          <div id="8"></div>
-          <div id="9"></div>
-          <div id="10"></div>
-          <div id="11"></div>
-          <div id="12"></div>
-          <div id="13"></div>
-          <div id="14"></div>
-          <div id="15"></div>
-          <div id="16"></div>
-          <div id="17"></div>
-          <div id="18"></div>
-          <div id="19"></div>
-          <div id="20"></div>
-        </div>
+        <!--Times(Left)-->
+        <tr class="times">
+          <td class="row row-1">8 AM</td>
+          <td class="row row-2">9 AM</td>
+          <td class="row row-3">10 AM</td>
+          <td class="row row-4">11 AM</td>
+          <td class="row row-5">12 PM</td>
+          <td class="row row-6">1 PM</td>
+          <td class="row row-7">2 PM</td>
+          <td class="row row-8">3 PM</td>
+          <td class="row row-9">4 PM</td>
+          <td class="row row-10">5 PM</td>
+        </tr>
 
-        <div class="tasksContainer">
-          <div class="taks">
-            <span class="tasksContainerClose">&times;</span>
-            <h3>Most important task</h3>
-            <form class="tasksContainerForm">
-              <label for="start">Start time</label>
-              <select id="start">
-                <option value="8 AM">8 AM</option>
-                <option value="9 AM">9 AM</option>
-                <option value="10 AM">10 AM</option>
-                <option value="11 AM">11 AM</option>
-                <option value="12 AM">12 PM</option>
-                <option value="1 PM">1 PM</option>
-                <option value="2 PM">2 PM</option>
-                <option value="3 PM">3 PM</option>
-                <option value="4 PM">4 PM</option>
-                <option value="5 PM">5 PM</option>
-              </select>
-              <label for="end">End time</label>
-              <select id="end">
-                <option value="8 AM">8 AM</option>
-                <option value="9 AM">9 AM</option>
-                <option value="10 AM">10 AM</option>
-                <option value="11 AM">11 AM</option>
-                <option value="12 AM">12 PM</option>
-                <option value="1 PM">1 PM</option>
-                <option value="2 PM">2 PM</option>
-                <option value="3 PM">3 PM</option>
-                <option value="4 PM">4 PM</option>
-                <option value="5 PM">5 PM</option>
-              </select>
-              <button type="submit">Submit</button>
-            </form>
-          </div>
-        </div>
+      </table>
 
-      </div>
-
-    </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="https://ajax.googleapis/ajax/jquery/3.3.1/jquery.min.js"></script>
+<!--jQuery-->
+    
+    <!--Script.js link-->
     <script src="script.js"></script>
   </body>
 </html>
