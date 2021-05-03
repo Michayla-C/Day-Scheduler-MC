@@ -42,16 +42,16 @@ $(document).ready(function () {
     }
 
     // Get item from local storage if any
-    $("#hour8 .description").val(localStorage.getItem("hour8"));
-    $("#hour9 .description").val(localStorage.getItem("hour9"));
-    $("#hour10 .description").val(localStorage.getItem("hour10"));
-    $("#hour11 .description").val(localStorage.getItem("hour11"));
-    $("#hour12 .description").val(localStorage.getItem("hour12"));
-    $("#hour13 .description").val(localStorage.getItem("hour13"));
-    $("#hour14 .description").val(localStorage.getItem("hour14"));
-    $("#hour15 .description").val(localStorage.getItem("hour15"));
-    $("#hour16 .description").val(localStorage.getItem("hour16"));
-    $("#hour17 .description").val(localStorage.getItem("hour17"));
+    $("#eight .text").val(localStorage.getItem("eight"));
+    $("#nine .text").val(localStorage.getItem("nine"));
+    $("#ten .text").val(localStorage.getItem("ten"));
+    $("#eleven .text").val(localStorage.getItem("eleven"));
+    $("#tweleve .text").val(localStorage.getItem("twelve"));
+    $("#thirteen .text").val(localStorage.getItem("thirteen"));
+    $("#fourteen .text").val(localStorage.getItem("fourteen"));
+    $("#fiveteen .text").val(localStorage.getItem("fiveteen"));
+    $("#sixteen .text").val(localStorage.getItem("sixteen"));
+    $("#seventeen .text").val(localStorage.getItem("seventeen"));
 
     timeTracker();
 })
