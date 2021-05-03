@@ -9,12 +9,13 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
+  background-color: #363636; ;
 }
 
 /*header*/
 .jumbotron {
   text-align: center;
-  background-color: rgb(101, 208, 235);
+  background-color: rgb(39, 157, 187);
   color: snow;
   border-bottom: 5px solid black;
   padding: 20px;
@@ -37,9 +38,12 @@ textarea {
 }
 
 /*time*/
-.rowTimeBlock {
+.timeBlock {
   text-align: center;
   border-radius: 15px;
+}
+/*row*/
+.row {
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;
@@ -48,8 +52,24 @@ textarea {
 /*hour*/
 .hour {
   background-color: turquoise;
+  color: azure;
+  border-top: 1px dashed black;
 }
 
+/*save button*/
+.save {
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: burlywood;
+  color: aliceblue;
+}
+
+/*hover*/
+.save i:hover {
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
 
 /*Device Compatability*/
 
@@ -84,3 +104,25 @@ html { font-size:100%; }
 @media (min-width:1100px) { body {font-size:1.5rem;} } 
 
 img { max-width: 100%; height: auto; }
+
+@media screen and (max-width:768px), screen and (max-width: 575px) {
+  .row {
+    height: auto;
+    margin-top: 20px;
+  }
+  
+  .hour {
+    padding-right: 17%;
+  }
+  
+  .save {
+    border: 0;
+    border-radius: 0.25rem;
+    height: 50px;
+  }
+  
+  textarea {
+    min-height: 85px;
+    border: 0;
+  }
+}
