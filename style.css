@@ -27,8 +27,8 @@ textarea {
   background: whitesmoke;
   border: black;
   resize: none;
-  color: aquamarine;
-  border-left: 1px solid black;
+  color: black;
+  border-left: 1px solid aqua;
   border-radius: 15px;
   padding: 10px;
 }
